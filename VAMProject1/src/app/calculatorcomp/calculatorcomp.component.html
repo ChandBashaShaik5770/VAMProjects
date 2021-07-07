@@ -1,0 +1,30 @@
+<h2><p>Calculator</p></h2>
+    <b><hr></b>
+<div class="container">
+    
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <table>
+    <h3>
+        <span> FirstNumber:  <input type='text' placeholder="enter number1"  [(ngModel)]='number1'><br></span>
+        
+        <span> SecondNumber: <input type='text' placeholder="enter number1" [(ngModel)]='number2'><br></span>
+       
+        <span> Result:        <input type='text' placeholder="result" [(ngModel)]='number3'></span>
+        <br>
+        <tr>
+        <td>
+            <input type="button" class='btn-primary' value='add' id="button" (click)="operation('+')">
+            <input type="button" class='btn-success' value='sub' id="button" (click)="operation('-')">
+            <input type="button" class='btn-info' value='mul' id="button" (click)="operation('*')">
+            <input type="button" class='btn-warning' value='div' id="button" (click)="operation('/')">
+        </td>
+    </tr>
+    </h3>
+</table>
+
+</div>
