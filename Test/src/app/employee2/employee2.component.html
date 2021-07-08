@@ -1,0 +1,31 @@
+
+<h2>Employee2 Component</h2>
+<hr>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<div class="container">
+    <table class="table">
+        <tr>
+            <td colspan="3">
+                <input  type="text"  width="10px" class="form-control"  placeholder="Search"  [(ngModel)]="filteredString" >
+            </td>
+        </tr>
+         <tr>
+             <th class="bg-primary text-white">Employee Id</th>
+             <th class="bg-primary text-white">Employee Name</th>
+             <th class="bg-primary text-white">Employee Salary</th>
+         </tr>
+
+         <tr appMycolor *ngFor="let employee of employees | search:filteredString">
+            <td class="bg-dark text-white">{{employee.empId}}</td>
+            <td class="bg-dark text-white">{{employee.empName | lowercase}}</td>
+            <td class="bg-dark text-white">{{employee.empSal | currency}}</td>
+         </tr>
+
+    </table>
+</div>
+{{errMsg | json}}

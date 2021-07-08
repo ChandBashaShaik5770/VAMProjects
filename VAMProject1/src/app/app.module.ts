@@ -34,6 +34,8 @@ import { SearchpipePipe } from './searchpipe.pipe';
 import { SortcoursepipePipe } from './sortcoursepipe.pipe';
 import { TempDrivenFormComponent } from './temp-driven-form/temp-driven-form.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
+import { Employee1Component } from './employee1/employee1.component';
+import { Employee2Component } from './employee2/employee2.component';
 
 
 
@@ -71,6 +73,8 @@ import { TemplateDrivenFormComponent } from './template-driven-form/template-dri
     SortcoursepipePipe,
     TempDrivenFormComponent,
     TemplateDrivenFormComponent,
+    Employee1Component,
+    Employee2Component,
     
     
     
